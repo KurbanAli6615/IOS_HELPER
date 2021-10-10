@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FeaturedProductsCollectionViewCell" reuseIdentifier="FeaturedProductsCollectionViewCell" id="gTV-IL-0wX" customClass="FeaturedProductsCollectionViewCell" customModule="Clown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="194"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrb-tO-OFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="194"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="04Y-JA-hG5">
+                                <rect key="frame" x="40.5" y="6" width="85" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="8do-4w-yXG"/>
+                                    <constraint firstAttribute="height" constant="95" id="WcS-lq-g5f"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHZ-Ek-E7P">
+                                <rect key="frame" x="139" y="5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="SQD-AM-zWN"/>
+                                    <constraint firstAttribute="height" constant="22" id="psI-dm-aWR"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="likeButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fQK-tC-LZi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$60.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-zD-D71">
+                                <rect key="frame" x="10" y="143.5" width="49" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.062228046359999997" green="0.49808102850000002" blue="0.85871559379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Military set for a small..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q3-ze-VXv">
+                                <rect key="frame" x="10" y="107" width="140" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Zbt-ke-qZu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OFR-zD-D71" firstAttribute="leading" secondItem="Wrb-tO-OFQ" secondAttribute="leading" constant="10" id="41o-gU-j8U"/>
+                            <constraint firstItem="04Y-JA-hG5" firstAttribute="centerX" secondItem="Wrb-tO-OFQ" secondAttribute="centerX" id="AoJ-Yq-ANa"/>
+                            <constraint firstItem="OFR-zD-D71" firstAttribute="top" secondItem="4q3-ze-VXv" secondAttribute="bottom" constant="3" id="Cbf-JB-Qqr"/>
+                            <constraint firstItem="4q3-ze-VXv" firstAttribute="top" secondItem="04Y-JA-hG5" secondAttribute="bottom" constant="6" id="M1C-dQ-5Ad"/>
+                            <constraint firstItem="4q3-ze-VXv" firstAttribute="leading" secondItem="Wrb-tO-OFQ" secondAttribute="leading" constant="10" id="UJp-jX-EUb"/>
+                            <constraint firstAttribute="trailing" secondItem="kHZ-Ek-E7P" secondAttribute="trailing" constant="5" id="e74-XF-Zsy"/>
+                            <constraint firstItem="04Y-JA-hG5" firstAttribute="top" secondItem="Wrb-tO-OFQ" secondAttribute="top" constant="6" id="f2p-pa-MYo"/>
+                            <constraint firstItem="kHZ-Ek-E7P" firstAttribute="top" secondItem="Wrb-tO-OFQ" secondAttribute="top" constant="5" id="fLT-Y6-P7U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wrb-tO-OFQ" secondAttribute="bottom" id="9C8-5v-eej"/>
+                <constraint firstAttribute="trailing" secondItem="Wrb-tO-OFQ" secondAttribute="trailing" id="QIX-08-GQ6"/>
+                <constraint firstItem="Wrb-tO-OFQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VXR-j7-hOl"/>
+                <constraint firstItem="Wrb-tO-OFQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qRS-Vq-6xo"/>
+            </constraints>
+            <size key="customSize" width="219" height="191"/>
+            <connections>
+                <outlet property="cellImage" destination="04Y-JA-hG5" id="XSs-Cj-1BR"/>
+                <outlet property="cellNameLabel" destination="4q3-ze-VXv" id="hb0-ew-gPu"/>
+                <outlet property="cellPriceLabel" destination="OFR-zD-D71" id="DOG-Cx-mLB"/>
+                <outlet property="likeButtonOutlet" destination="kHZ-Ek-E7P" id="UR4-KI-yNh"/>
+            </connections>
+            <point key="canvasLocation" x="126.08695652173914" y="109.82142857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
