@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.4)
+  - CryptoSwift (1.4.1)
+  - MBProgressHUD (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CryptoSwift
+  - MBProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CryptoSwift
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+
+PODFILE CHECKSUM: d64e5b685348fba73b76b3317ac1a7155202e337
+
+COCOAPODS: 1.10.1

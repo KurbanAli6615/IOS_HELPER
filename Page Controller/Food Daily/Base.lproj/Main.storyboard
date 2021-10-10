@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jrG-Ji-Vv3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="9ds-4Y-FAn">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jrG-Ji-Vv3" customClass="TutorialViewController" customModule="Food_Daily" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mHK-HQ-vWm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hG-TK-FMy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <segue destination="MW3-j4-2P5" kind="embed" id="0KS-5y-WRN"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YQu-52-ueG">
+                                <rect key="frame" x="10" y="784.5" width="394" height="27.5"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hcG-xH-mfU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hcG-xH-mfU" firstAttribute="bottom" secondItem="2hG-TK-FMy" secondAttribute="bottom" id="0En-7Q-lju"/>
+                            <constraint firstItem="hcG-xH-mfU" firstAttribute="bottom" secondItem="YQu-52-ueG" secondAttribute="bottom" constant="50" id="VGg-Ss-4wa"/>
+                            <constraint firstItem="2hG-TK-FMy" firstAttribute="trailing" secondItem="hcG-xH-mfU" secondAttribute="trailing" id="WxN-nh-Hjq"/>
+                            <constraint firstItem="2hG-TK-FMy" firstAttribute="leading" secondItem="hcG-xH-mfU" secondAttribute="leading" id="aHs-Su-DlV"/>
+                            <constraint firstItem="YQu-52-ueG" firstAttribute="leading" secondItem="hcG-xH-mfU" secondAttribute="leading" constant="10" id="egx-D8-lCU"/>
+                            <constraint firstItem="hcG-xH-mfU" firstAttribute="trailing" secondItem="YQu-52-ueG" secondAttribute="trailing" constant="10" id="qr1-YK-hdg"/>
+                            <constraint firstItem="2hG-TK-FMy" firstAttribute="top" secondItem="hcG-xH-mfU" secondAttribute="top" id="yRM-P0-O39"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="2hG-TK-FMy" id="RVg-Wt-6mz"/>
+                        <outlet property="pageControl" destination="YQu-52-ueG" id="Pmz-dm-u3x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Q4-cm-5N5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="-208"/>
+        </scene>
+        <!--Walkthrough Page Controller-->
+        <scene sceneID="14V-6Y-hou">
+            <objects>
+                <pageViewController storyboardIdentifier="WalkthroughPageController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="MW3-j4-2P5" customClass="WalkthroughPageController" customModule="Food_Daily" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7S-gu-yfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="-208"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wyf-1n-n8X">
+            <objects>
+                <viewController storyboardIdentifier="v1" id="2je-al-Gg1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5k-6y-E5l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Bqv-5X-SrQ"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRi-s5-I3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-507"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bh5-je-4te">
+            <objects>
+                <viewController storyboardIdentifier="v2" id="z4i-Pz-uaF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jjd-np-xer">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fey-9b-VUg"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cai-pI-LDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="188"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7fL-IZ-dpM">
+            <objects>
+                <viewController storyboardIdentifier="v3" id="f2Q-3E-WqY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zB7-2g-H71">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Okj-WJ-z8C"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOT-n3-iga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270" y="-672"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
